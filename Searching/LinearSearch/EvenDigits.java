@@ -27,6 +27,10 @@ public class EvenDigits {
         if(x<0){
             x = x * -1;
         }
+
+        if(x == 0){
+            return 1;
+        }
         int count = 0;
         while(x>0){
             count++;
