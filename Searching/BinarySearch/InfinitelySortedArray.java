@@ -6,7 +6,7 @@ public class InfinitelySortedArray {
      int start = 0;
      int end = 1;
 
-     while(start<=end){
+     while(target > nums[end]){
          int temp = end + 1;
          end = end + ((end=start + 1)*2);
          start = temp;
