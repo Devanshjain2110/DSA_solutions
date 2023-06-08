@@ -1,4 +1,4 @@
-package Searching.BinarySearch;
+package Searching.BinarySearch.NonLeetCodeQue;
 
 public class OrderAgnosticBianrySearch {
     public static void main(String[] args) {

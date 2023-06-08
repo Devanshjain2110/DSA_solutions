@@ -1,4 +1,4 @@
-package Searching.LinearSearch;
+package Searching.LinearSearch.NonLeetCodeQue;
 
 import java.util.Arrays;
 

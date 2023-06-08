@@ -1,4 +1,4 @@
-package Searching.BinarySearch;
+package Searching.BinarySearch.NonLeetCodeQue;
 
 public class InfinitelySortedArray {
 

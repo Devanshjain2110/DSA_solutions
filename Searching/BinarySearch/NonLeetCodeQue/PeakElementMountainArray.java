@@ -1,4 +1,4 @@
-package Searching.BinarySearch;
+package Searching.BinarySearch.NonLeetCodeQue;
 
 public class PeakElementMountainArray {
     public static void main(String[] args) {

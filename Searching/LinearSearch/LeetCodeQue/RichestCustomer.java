@@ -1,5 +1,5 @@
-package Searching.LinearSearch;
-
+package Searching.LinearSearch.LeetCodeQue;
+// https://leetcode.com/problems/richest-customer-wealth/
 public class RichestCustomer {
     public static void main(String[] args) {
         int[][] accounts = {
