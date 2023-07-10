@@ -14,7 +14,13 @@ public class Pat9 {
             for (int x = 0; x < i; x++){
                 System.out.print(" ");
             }
-        for (int y = 0; y)
+        for (int y = 0; y < 9-2*i; y++){
+            System.out.print("*");
+            }
+            for (int x = 0; x < i; x++){
+                System.out.print(" ");
+            }
+            System.out.println();
 
         }
     }
