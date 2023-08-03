@@ -20,10 +20,10 @@ public class QuickSort {
         int pivot = arr[mid];
 
         while(s <= e) {
-            if(arr[s] < pivot){
+            while(arr[s] < pivot){
                 s++;
             }
-            if(arr[e] > pivot){
+            while(arr[e] > pivot){
                 e--;
             }
             if(s <= e){
