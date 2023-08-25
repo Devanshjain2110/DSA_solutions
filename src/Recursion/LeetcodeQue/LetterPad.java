@@ -5,11 +5,11 @@ import java.util.List;
 // https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
 public class LetterPad {
     public static void main(String[] args) {
-
         System.out.println( letters("", "23"));
     }
 
     static List<String> letters(String p, String up){
+
         if(up.isEmpty()){
             ArrayList<String> list = new ArrayList<>();
             list.add(p);
