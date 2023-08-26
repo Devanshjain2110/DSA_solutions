@@ -17,7 +17,7 @@ public class MaximumProductOfThreeNumbers {
     }
 
     static void sort(int[] nums, int low, int hi){
-        while(low>=hi){
+        if(low>=hi){
             return;
         }
 
