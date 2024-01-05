@@ -12,23 +12,27 @@ public class KidWithGreatestNumberOfCandies {
     }
 
 
-     static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-        int n = candies.length;
-        ArrayList<Boolean> result = new ArrayList<>();
-         int maxi = 0;
-         for (int candy : candies) {
-             if (candy > maxi) {
-                 maxi = candy;
-             }
-         }
-         for (int candy : candies) {
-             if ((candy + extraCandies) >= maxi) {
-                 result.add(true);
-             } else {
-                 result.add(false);
-             }
-         }
+    static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        int n  = candies.length;
+        List<Boolean> result = new ArrayList<Boolean>(n);
+        int max = max(candies);
+        for(int i = 0; i < n; i++ ){
+            if(candies[i] + extraCandies >= max){
+                result.add(true);
+            }else {
+                result.add(false);
+            }
+        }
         return result;
+    }
+    static int max(int[] candies){
+        int max = 0;
+        for(int i = 0; i < candies.length; i++ ){
+            if(candies[i] >= max){
+                max = candies[i];
+            }
+        }
+        return max;
     }
 
 }
