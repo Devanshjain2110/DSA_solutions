@@ -9,7 +9,7 @@ public class NumberSmallerThanCurrent {
         int[] nums = {8,1,2,2,3};
         System.out.println(Arrays.toString(smallerNumbersThanCurrent(nums)));
     }
-    static  int[] smallerNumbersThanCurrent(int[] nums) {
+    static int[] smallerNumbersThanCurrent(int[] nums) {
         int[] arr = new int[nums.length];
         for(int i =0; i< nums.length; i++){
             int count = 0;
@@ -17,8 +17,9 @@ public class NumberSmallerThanCurrent {
                 if(i!=j && nums[i] > nums[j]){
                     count++;
                 }
-                arr[i] = count;
+
             }
+            arr[i] = count;
         }
         return arr;
     }
