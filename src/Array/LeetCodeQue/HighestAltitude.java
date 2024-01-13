@@ -2,16 +2,21 @@ package Array.LeetCodeQue;
 // https://leetcode.com/problems/find-the-highest-altitude/description/
 public class HighestAltitude {
     public static void main(String[] args) {
+        int[] arr =  {-4,-3,-2,-1,4,3,2};
+        System.out.println(largestAltitude(arr));
     }
     static int largestAltitude(int[] gain) {
-        int max = 0;
+        int maximum = 0;
         int sum = 0;
-        for(int i : gain){
+        for(int i =0; i <gain.length; i++){
             sum += gain[i];
-            if(sum > max){
-                max = sum;
+            if(sum > maximum){
+                maximum = sum;
             }
         }
-        return Math.max(max, 0);
+        if(maximum > 0){
+            return maximum;
+        }else
+            return 0;
     }
 }
