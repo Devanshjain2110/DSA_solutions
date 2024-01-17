@@ -42,6 +42,27 @@ public class FirstAndLastPosition {
         return ans;
     }
 
+    // Brute force
+    public int[] searchRange(int[] nums, int target) {
+        if(nums.length == 0) return new int[] {-1,-1};
+        int before = Integer.MIN_VALUE;
+        int after = Integer.MIN_VALUE;
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] == target){
+                if(before > Integer.MIN_VALUE){
+                    after = i;
+                } else {
+                    before = i;
+                }
+
+            }
+        }
+        if(before != Integer.MIN_VALUE && after == Integer.MIN_VALUE) return new int[] {before, before};
+        if(before == Integer.MIN_VALUE ) return new int[] {-1,-1};
+
+        return new int[]{before, after};
+    }
+
     public static void main(String[] args) {
         int[] nums = {2,3,4,7,7,7,7,8,9};
         int target = 7;
