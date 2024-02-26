@@ -4,23 +4,30 @@ package Searching.BinarySearch.LeetcodeQue;
 public class SingleElementInSortedArray {
     public static void main(String[] args) {
         int[] nums = {1,1,2,3,3,4,4,8,8};
-        System.out.println(findElement(nums));
+        System.out.println(singleNonDuplicate(nums));
     }
 
-    static int findElement(int[] arr){
+    static int singleNonDuplicate(int[] nums) {
         int start = 0;
-        int end = arr.length-1;
+        int end = nums.length-1;
+        while(start <end){
+            int mid = start + (end - start)/2;
+            boolean isEven = mid%2==0;
 
-        while(start<end){
-            int mid =start + (end-start)/2;
-
-            if( ( mid%2==0 && arr[mid] == arr[mid+1] ) || ( mid%2==1 && arr[mid] == arr[mid-1] )){
-                start = mid+1;
-            }
-            else{
-                end = mid;
+            if(isEven){
+                if(nums[mid] == nums[mid+1]){
+                    start = mid+2;
+                }else{
+                    end = mid;
+                }
+            } else {
+                if(nums[mid] == nums[mid-1]){
+                    start = mid+1;
+                } else {
+                    end = mid-1;
+                }
             }
         }
-        return arr[start];
+        return nums[start];
     }
 }
