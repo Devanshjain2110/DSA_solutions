@@ -1,10 +1,10 @@
 package Array.LeetCodeQue;
 
 import java.util.Arrays;
-
+// Re-did this problem
 public class ShuffleTheArray {
     public static void main(String[] args) {
-       int[] nums = {2,5,1,3,4,7};
+       int[] nums = {2,5,1,9,4,7};
        int n = 3;
         System.out.println(Arrays.toString(bruteForce(nums,n)));
         System.out.println(Arrays.toString(twoPointer(nums,n)));
