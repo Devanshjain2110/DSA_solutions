@@ -2,7 +2,7 @@ package Array.LeetCodeQue;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Re attempted
 // https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 public class KidWithGreatestNumberOfCandies {
     public static void main(String[] args) {
