@@ -1,5 +1,5 @@
 package Array.LeetCodeQue;
-
+// Redid this
 public class NumberOfGoodPairs {
     public static void main(String[] args) {
         int[] nums = {1,2,3,1,1,3};
