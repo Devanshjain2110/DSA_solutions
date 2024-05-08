@@ -2,7 +2,7 @@ package Array.LeetCodeQue;
 
 
 import java.util.Arrays;
-
+// Re attempted this
 // https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
 public class NumberSmallerThanCurrent {
     public static void main(String[] args) {
