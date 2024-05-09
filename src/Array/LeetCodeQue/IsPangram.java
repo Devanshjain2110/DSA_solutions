@@ -1,5 +1,5 @@
 package Array.LeetCodeQue;
-
+// Redid IsPangram
 //  https://leetcode.com/problems/check-if-the-sentence-is-pangram/
 public class IsPangram {
     public static void main(String[] args) {
