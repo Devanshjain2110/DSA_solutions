@@ -2,7 +2,7 @@ package Array.LeetCodeQue;
 import java.util.ArrayList;
 import java.util.List;
 // https://leetcode.com/problems/count-items-matching-a-rule/description/
-
+// Redid This
 public class CountItemsMatchingARule {
     public static void main(String[] args) {
 
