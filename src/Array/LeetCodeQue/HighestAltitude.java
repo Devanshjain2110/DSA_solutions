@@ -6,17 +6,17 @@ public class HighestAltitude {
         System.out.println(largestAltitude(arr));
     }
     static int largestAltitude(int[] gain) {
-        int maximum = 0;
-        int sum = 0;
-        for(int i =0; i <gain.length; i++){
-            sum += gain[i];
-            if(sum > maximum){
-                maximum = sum;
+        int max = 0;
+        int alt = 0;
+        int n = gain.length;
+        for(int i = 0; i < n; i++){
+            alt += gain[i];
+            if(alt > max){
+                max = alt;
             }
         }
-        if(maximum > 0){
-            return maximum;
-        }else
-            return 0;
+        if(max > 0) return max;
+
+        return 0;
     }
 }
