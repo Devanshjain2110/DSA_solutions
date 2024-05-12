@@ -4,7 +4,7 @@ public class MatrixDiagonalSum {
     public static void main(String[] args) {
 
     }
-// redid
+// redid Diagonal sum
     static int diagonalSum(int[][] mat) {
         boolean isEven = mat.length%2 == 0;
         int sum = 0;
