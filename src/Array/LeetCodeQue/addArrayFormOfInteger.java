@@ -22,9 +22,7 @@ public class addArrayFormOfInteger {
             list.add(k%10);
             k /= 10;
         }
-
         Collections.reverse(list);
-
         return list;
     }
 }
