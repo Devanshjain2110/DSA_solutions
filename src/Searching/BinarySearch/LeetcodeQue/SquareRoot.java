@@ -1,5 +1,6 @@
 package Searching.BinarySearch.LeetcodeQue;
 // https://leetcode.com/problems/sqrtx/
+// Redid Square Root
 public class SquareRoot {
     public static void main(String[] args) {
         System.out.println(mySqrt(99));
