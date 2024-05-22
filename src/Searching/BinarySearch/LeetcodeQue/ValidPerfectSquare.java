@@ -26,9 +26,6 @@ public class ValidPerfectSquare {
             else
                 end = mid - 1;
         }
-
-
-
         return false;
     }
 }
