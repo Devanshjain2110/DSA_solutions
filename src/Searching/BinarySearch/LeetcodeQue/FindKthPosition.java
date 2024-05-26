@@ -1,6 +1,7 @@
 package Searching.BinarySearch.LeetcodeQue;
 
 // https://leetcode.com/problems/kth-missing-positive-number/
+// Redid
 public class FindKthPosition {
     public static void main(String[] args) {
        int[] arr = {2,3,4,7,11};
@@ -21,7 +22,6 @@ public class FindKthPosition {
                 end = mid - 1;
             }
         }
-
         return start + k;
     }
 }
