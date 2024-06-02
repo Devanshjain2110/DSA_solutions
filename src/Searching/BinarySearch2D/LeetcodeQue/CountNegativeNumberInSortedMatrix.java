@@ -1,5 +1,6 @@
 package Searching.BinarySearch2D.LeetcodeQue;
 // https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
+// redid
 public class CountNegativeNumberInSortedMatrix {
     public static void main(String[] args) {
         int[][] grid = {{4,3,2,-1},{3,2,1,-1},{1,1,-1,-2},{-1,-1,-2,-3}};
