@@ -1,7 +1,7 @@
 package Searching.BinarySearch.LeetcodeQue;
 
 // https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
-
+// Redid
 public class MinimumInRBS {
 
     public int findMin(int[] nums) {
