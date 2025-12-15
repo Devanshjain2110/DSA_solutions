@@ -1,7 +1,7 @@
 package Array.LeetCodeQue;
 // https://leetcode.com/problems/build-array-from-permutation/
 import java.util.Arrays;
-
+// Solved again on 15-12-25
 public class BuildArrayFromPermutation {
     public static void main(String[] args) {
         int[] arr1 = { 5, 0, 1, 2, 3, 4 };
