@@ -1,5 +1,5 @@
 package Array.LeetCodeQue;
-// Redid IsPangram
+// Redid on 28-12-25
 //  https://leetcode.com/problems/check-if-the-sentence-is-pangram/
 public class IsPangram {
     public static void main(String[] args) {
@@ -7,17 +7,22 @@ public class IsPangram {
         System.out.println(checkIfPangram(sentence));
     }
 
-    static boolean checkIfPangram(String sentence) {
-        boolean[] alphabet = new boolean[26];
-        char[] alpha = sentence.toCharArray();
-
-        for(char ch: alpha){
-            alphabet[ch - 'a'] = true;
+    static  boolean checkIfPangram(String sentence) {
+        boolean[] alphabets = new boolean[26];
+        char[] chars = sentence.toCharArray();
+        for(char c : chars){
+            int num = (int) (c - 'a');
+            if(!alphabets[num]){
+                alphabets[num] = true;
+            }
         }
 
-        for(boolean isAlpha : alphabet){
-            if(!isAlpha) return false;
+        for (boolean alphabet : alphabets) {
+            if(!alphabet){
+                return false;
+            }
         }
+
         return true;
     }
 }
